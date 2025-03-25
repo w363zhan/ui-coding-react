@@ -1,11 +1,16 @@
 import "./App.css";
-import NestedCheckboxes from "./components/NestedCheckboxes";
+import ProblemSolution from "./components/ProblemSolution";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 
 function App() {
   return (
-    <>
-      <NestedCheckboxes />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/problem/:id" element={<ProblemSolution />} />
+      </Routes>
+    </Router>
   );
 }
 
