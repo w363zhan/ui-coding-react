@@ -33,5 +33,23 @@ Make sure you have the following installed:
 3. Start the development server:
    ```sh
    npm run dev
-5. Open your browser and navigate to localhost
+4. Open your browser and navigate to localhost
+
+## Project Structure
+
+```bash
+/ui-coding-react
+│── src
+│   ├── components
+│   │   ├── solutions   # Solution components for each problem
+│   │   └── pages       # Pages such as home and individual problem pages
+│   ├── data            # Problem descriptions and metadata
+│   ├── App.js          # Main application file
+│   ├── index.js        # Entry point
+│── public
+│── package.json        # Project dependencies and scripts
+│── README.md           # This README file
+```
+
+
    
