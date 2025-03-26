@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function Home() {
   return (
-    <nav>
+    <nav style={{ display: "flex", flexDirection: "column" }}>
       {problemsData.map((problem) => (
         <Link key={problem.id} to={`/problem/${problem.id}`}>
           {problem.title}
